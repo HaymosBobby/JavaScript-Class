@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shares Company</title>
+
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .process-section {
+        background: #333;
+        text-align: center;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+
+      .process-section .amount {
+        font-size: 2rem;
+      }
+
+      .btn {
+        border: none;
+        padding: 7px 10px;
+        border-radius: 3px;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Do More Shares Company Limited</h1>
+    </header>
+
+    <section>
+      <p>Available unit/share: $<span class="shares"></span></p>
+
+      <p>Please input the amount of unit you'll like to purchase below.</p>
+      <input
+        type="number"
+        name="number"
+        class="no-of-unit"
+        placeholder="Enter amount of unit of purchase."
+      />
+
+      <p>NB: One unit is 10 dollars each</p>
+
+      <div class="process-section">
+        <p class="amount"></p>
+        <button class="btn">Process</button>
+      </div>
+
+      <button>Proceed to Payment</button>
+    </section>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
